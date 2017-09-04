@@ -8,7 +8,7 @@ RUN pip install -r /tmp/requirements.txt
 RUN rm -f /tmp/requirements.txt
 
 RUN mkdir -p /opt/service
-COPY reader.py /opt/service/
+COPY *.py /opt/service/
 
 EXPOSE 5000
 WORKDIR /opt/service
